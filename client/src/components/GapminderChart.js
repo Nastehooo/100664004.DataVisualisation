@@ -16,7 +16,7 @@ const GapminderChart = () => {
   ];
 
   useEffect(() => {
-    fetch('https://server-1-01nj.onrender.com/api/animation')
+    fetch('https://localhost:8000/api/animation')
       .then(res => res.json())
       .then(json => {
         const cleaned = json.map(d => ({

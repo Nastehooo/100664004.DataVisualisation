@@ -19,7 +19,7 @@ function ScatterPlot({ selectedWaves }) {
   const [modalData, setModalData] = useState([]);
 
   const fetchAndSampleData = () => {
-    fetch('https://server-1-01nj.onrender.com/api/scatter-data')
+    fetch('https://localhost:8000/api/scatter-data')
       .then(response => response.json())
       .then(data => {
         const grouped = {};

@@ -11,7 +11,7 @@ function BarChart({ selectedWaves }) {
   const [sampledData, setSampledData] = useState([]);
 
   useEffect(() => {
-    fetch('https://server-1-01nj.onrender.com/api/bar-chart-data')
+    fetch('https://localhost:8000/api/bar-chart-data')
       .then(response => response.json())
       .then(data => {
         const grouped = {};
