@@ -10,7 +10,7 @@ const MapChart = ({ selectedWaves }) => {
 
   useEffect(() => {
     // Fetch GeoJSON data (regions)
-    fetch("http://localhost:8000//api/geo")
+    fetch("http://localhost:8000/api/geo")
       .then((res) => res.json())
       .then((data) => setGeoData(data))
       .catch((err) => console.error("GeoJSON data fetch error:", err));
