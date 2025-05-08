@@ -11,7 +11,7 @@ function BarChart({ selectedWaves }) {
   const [sampledData, setSampledData] = useState([]);
 
   useEffect(() => {
-    fetch('https://localhost:8000/api/bar-chart-data')
+    fetch('http://localhost:8000/api/bar-chart-data')
       .then(response => response.json())
       .then(data => {
         const grouped = {};
