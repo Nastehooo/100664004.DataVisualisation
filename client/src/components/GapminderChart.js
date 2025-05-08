@@ -141,7 +141,7 @@ const GapminderChart = () => {
         tooltip.style('visibility', 'hidden');
         d3.select(this).attr('stroke', null);
       });
-  }, [data, waves, currentWaveIndex]);  // ✅ Added dependencies to ensure proper re-renders
+  });  // ✅ Added dependencies to ensure proper re-renders
 
   useEffect(() => {
     drawChart();
