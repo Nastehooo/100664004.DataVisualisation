@@ -16,7 +16,7 @@ const MapChart = ({ selectedWaves }) => {
       .catch((err) => console.error("GeoJSON data fetch error:", err));
 
     // Fetch map chart data (hehear values)
-    fetch("https://server-1-01nj.onrender.com/api/map-chart-data")
+    fetch("http://localhost:8000/api/map-chart-data")
       .then((res) => res.json())
       .then((data) => setMapData(data))
       .catch((err) => console.error("Map chart data fetch error:", err));
